@@ -1,0 +1,68 @@
+.btn{
+  position: relative;
+  transition: $transition;
+  padding: 15px 40px;
+  max-width: 200px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  width: fit-content;
+  text-align: center;
+  z-index: 1;
+  display: block;
+  text-transform: uppercase;
+  @include breakpoint(sm) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &-2{
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  &.orange{
+    background: $orange;
+    color: $white;
+  }
+  &.navy{
+    background: $dark-gray;
+    color: $white;
+  }
+  &:hover{
+    &.orange{
+      background: $yellow;
+      color: $navy;
+    }
+    &.navy{
+      background: $white;
+      color: $navy;
+    }
+  }
+}
+
+.swiper-buttons{
+  .swiper-button-prev, .swiper-button-next{
+    color: $white;
+    font-size: 25px;
+    &:after{
+      display: none;
+    }
+    &:hover{
+      color: $orange;
+    }
+  }
+}
+
+.swiper-pagination{
+  z-index: 2;
+  .swiper-pagination-bullet{
+    background: $white;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background: $orange;
+  }
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
+  }
+}

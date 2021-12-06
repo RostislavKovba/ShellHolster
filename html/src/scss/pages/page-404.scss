@@ -1,0 +1,23 @@
+.page-404{
+    background: $light-white;
+    .wrap{
+        margin: 100px 0;
+        padding: 60px;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include breakpoint(sm) {
+            padding: 30px;
+        }
+        p{
+            padding: 10px 0;
+            text-align: center;
+        }
+        .btn{
+            max-width: fit-content;
+            margin: 10px auto;
+        }
+    }
+}
