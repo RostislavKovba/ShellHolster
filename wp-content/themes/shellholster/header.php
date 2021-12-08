@@ -39,9 +39,7 @@
                 <?php get_search_form(); ?>
             </div>
 
-            <a href="<?= esc_url( wc_get_cart_url() ); ?>" class="cart">
-                <i class="fas fa-cart-arrow-down"></i>
-            </a>
+            <?php shellholster_woocommerce_header_cart(); ?>
 
             <a href="<?= esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id') ) ); ?>" class="accout">
                 <i class="far fa-user"></i>

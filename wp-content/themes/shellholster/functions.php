@@ -127,7 +127,7 @@ function shellholster_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'shellholster' ),
-			'id'            => 'sidebar-1',
+			'id'            => 'sidebar-filter',
 			'description'   => esc_html__( 'Add widgets here.', 'shellholster' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -143,6 +143,7 @@ add_action( 'widgets_init', 'shellholster_widgets_init' );
  */
 function shellholster_scripts() {
 	wp_enqueue_style( 'shellholster-style', get_stylesheet_uri(), array(), null );
+	wp_enqueue_style( 'shellholster-font', 'https://fonts.googleapis.com/css?family=Roboto:400,700', array(), null );
 	wp_enqueue_style( 'fontawesome', 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css', array(), null );
 
 	wp_enqueue_script( 'jquery');

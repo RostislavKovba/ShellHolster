@@ -24,10 +24,11 @@ if ( $related_products ) : ?>
 	<section class="related products">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Similar Products', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
+            <p class="subtitle">Check out of these</p>
 			<h2><?php echo esc_html( $heading ); ?></h2>
 		<?php endif; ?>
 		

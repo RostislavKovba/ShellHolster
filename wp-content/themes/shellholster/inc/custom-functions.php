@@ -224,33 +224,15 @@ function shell_contact_info( $field )
 	};
 }
 
-
 /**
- * Get background image
+ * @param $filter_name
  */
-function shell_background() {
-    if( is_home() ) {
-        $background = get_the_post_thumbnail_url( get_option('page_for_posts') );
-    } elseif ( has_post_thumbnail() ) {
-        $background = get_the_post_thumbnail_url();
-    } else {
-        $background = get_header_image();
-    }    
-    return $background;
-}
+function the_filter_options( $filter_name )
+{
+    if ( !$filter_name ) return;
 
-/**
- * Get title
- */
-function shell_title() {
-    if ( is_front_page() ) {
-        $title = get_bloginfo('name');
-    } elseif ( is_home() ) {
-        $title = get_the_title( get_option('page_for_posts') );
-    } elseif ( is_archive() ) {
-        $title = get_the_archive_title();
-    } else {
-        $title = get_the_title();
+    $brands = get_terms('pa_'. $filter_name);
+    foreach ($brands as $brand) {
+        echo '<option value="' . $brand->slug . '">' . $brand->name . '</option>';
     }
-    return $title;
 }

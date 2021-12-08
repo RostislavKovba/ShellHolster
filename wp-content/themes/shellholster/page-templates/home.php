@@ -7,7 +7,7 @@ get_header();
 
 ?>
 
-<main class="page-wrapper front-page">
+<main class="page-wrapper front-page" xmlns="http://www.w3.org/1999/html">
 
     <section class="banner">
         <div class="swiper-js banner-slider">
@@ -20,7 +20,7 @@ get_header();
             <div class="swiper-container">
                 <div class="swiper-wrapper">
 
-                    <? if ( have_rows('hero_slider') ) : ?>
+                    <?php if ( have_rows('hero_slider') ) : ?>
                     <?php while ( have_rows('hero_slider') ) : the_row();
                         $img  = get_sub_field('image');
                         $link = get_sub_field('link');
@@ -43,94 +43,79 @@ get_header();
 
     <section class="best-cases">
         <div class="container">
-            <h2 class="title">Use Only Best Phones Cases</h2>
-            <p>The Shell Holster Combo it is best case for cell phone. It is durable, sturdy. It provides high protection and improves the phone usability. It defends your gadget from dirt, dust, moisture and scratches thanks to our rubberized holster. Using new technologies makes it possible to increase the safety of the device in case of a fall. Using a 180-degree rotatable holster with a ratchet clip will provide comfortable wearing, great fit and convenient positioning. The highest quality of rubberized texture provides a secure grip on your phone. With the built-in kickstand, you can place your mobile phone horizontally or vertically for video calls or watching multimedia. All holes are fully compatible with buttons, sensors and cameras. Supports wireless charging. Based on all the characteristics, our holster can stand on a par with the best phone case in the world.</p>
-            <a href="#" class="btn orange">READ MORE</a>
+            <h2 class="title"><?php the_field('cases_title'); ?></h2>
+            <?php the_field('cases_text'); ?>
+            <a href="<?= get_field('cases_button')['url'] ?>" class="btn orange"><?= get_field('cases_button')['title'] ?></a>
         </div>
     </section>
 
     <section class="cases-series">
         <div class="container">
-            <p class="subtitle">CASE SERIES</p>
-            <h2 class="title">Choose Your Functionality.</h2>
+            <p class="subtitle"><?php the_field('series_suptitle'); ?></p>
+            <h2 class="title"><?php the_field('series_title'); ?></h2>
+
             <ul class="cases-series-list">
-                <li>
-                    <p class="subtitle label">Series</p>
-                    <p class="title-3">Shell Holster</p>
-                    <p class="description">Offers slim and lightweight 360-degree protection with a multi-angle kickstand</p>
-                    <a href="#" class="btn btn-2 orange">READ MORE</a>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ChooseYourFunctionalityDefender.png" alt="#" />
-                </li>
-                <li>
-                    <p class="subtitle label">Series</p>
-                    <p class="title-3">Shell Holster</p>
-                    <p class="description">Offers slim and lightweight 360-degree protection with a multi-angle kickstand</p>
-                    <a href="#" class="btn btn-2 orange">READ MORE</a>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ChooseYourFunctionalityDefender.png" alt="#" />
-                </li>
-                <li>
-                    <p class="subtitle label">Series</p>
-                    <p class="title-3">Shell Holster</p>
-                    <p class="description">Offers slim and lightweight 360-degree protection with a multi-angle kickstand</p>
-                    <a href="#" class="btn btn-2 orange">READ MORE</a>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ChooseYourFunctionalityDefender.png" alt="#" />
-                </li>
-                <li>
-                    <p class="subtitle label">Series</p>
-                    <p class="title-3">Shell Holster</p>
-                    <p class="description">Offers slim and lightweight 360-degree protection with a multi-angle kickstand</p>
-                    <a href="#" class="btn btn-2 orange">READ MORE</a>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ChooseYourFunctionalityDefender.png" alt="#" />
-                </li>
+                <?php if ( have_rows('series_list') ) : ?>
+                <?php while ( have_rows('series_list') ) : the_row();
+                    $img  = get_sub_field('image');
+                    $link = get_sub_field('link');
+                    ?>
+
+                    <li>
+                        <p class="subtitle label">Series</p>
+                        <p class="title-3"><?php the_sub_field('title'); ?></p>
+                        <p class="description"><?php the_sub_field('text'); ?></p>
+                        <a href="<?= $link['url'] ?>" class="btn btn-2 orange"><?= $link['title'] ?></a>
+                        <img src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>" />
+                    </li>
+
+                <?php endwhile; ?>
+                <?php endif; ?>
             </ul>
         </div>
     </section>
 
     <section class="functional-design">
         <div class="container">
-            <p class="subtitle">functional design</p>
-            <h2 class="title">More Features. More Protection.</h2>
-            <img src="<?= get_template_directory_uri(); ?>/img/all/MoreFeaturesMoreProtection.png" alt="#" />
+            <p class="subtitle"><?php the_field('design_suptitle'); ?></p>
+            <h2 class="title"><?php the_field('design_title'); ?></h2>
+            <img src="<?= get_field('design_img')['url']; ?>" alt="<?= get_field('design_img')['alt']; ?>" />
         </div>
     </section>
 
     <section class="portability">
         <div class="container">
-            <p class="subtitle">easy portability</p>
-            <h2 class="title">180 Belt Clip.</h2>
-            <img src="<?= get_template_directory_uri(); ?>/img/all/180BeltClip.png" alt="#" />
+            <p class="subtitle"<?php the_field('portability_suptitle'); ?></p>
+            <h2 class="title"><?php the_field('portability_title'); ?></h2>
+            <img src="<?= get_field('portability_img')['url'] ?>" alt="<?= get_field('portability_img')['alt'] ?>" />
         </div>
     </section>
 
     <section class="quality-cases">
         <div class="container">
-            <p class="subtitle">Quality Cases</p>
-            <h2 class="title">Extra Features for Your Comfort</h2>
+            <p class="subtitle"><?php the_field('features_suptitle'); ?></p>
+            <h2 class="title"><?php the_field('features_title'); ?></h2>
             <ul class="quality-cases-wrap">
-                <li>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ExtraFeaturesVerticalKickstand.png" alt="#"/>
-                    <b>Vertical Kickstand</b>
-                </li>
-                <li>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ExtraFeaturesHorizontaKickstand.png" alt="#"/>
-                    <b>Horizontal Kickstand</b>
-                </li>
-                <li>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ExtraFeaturesWirelessCharging.png" alt="#"/>
-                    <b>Wireless Charging</b>
-                </li>
-                <li>
-                    <img src="<?= get_template_directory_uri(); ?>/img/all/ExtraFeaturesEasilyRemovable.png" alt="#"/>
-                    <b>Easily Removable</b>
-                </li>
+                <?php if ( have_rows('features_list') ) : ?>
+                <?php while ( have_rows('features_list') ) : the_row();
+                    $img = get_sub_field('image');
+                    ?>
+
+                    <li>
+                        <img src="<?= $img['url']; ?>" alt="<?= $img['alt'] ?>"/>
+                        <b><?php the_sub_field('title'); ?></b>
+                    </li>
+
+                <?php endwhile; ?>
+                <?php endif; ?>
             </ul>
         </div>
     </section>
 
     <section class="cases-video">
         <div class="container">
-            <a href="https://shellholster.com/wp-content/uploads/2021/03/Shell-Holster-Combo-1.mp4?wmode=opaque" data-fancybox>
-                <img src="<?= get_template_directory_uri(); ?>/img/all/video.png" alt="#" />
+            <a href="<?php the_field('features_video'); ?>?wmode=opaque" data-fancybox>
+                <img src="<?= get_field('features_preview')['url']; ?>" alt="<?= get_field('features_preview')['alt']; ?>" />
             </a>
         </div>
         <div class="wrapper">
@@ -150,8 +135,8 @@ get_header();
                 <table>
                     <tr class="top-heading">
                         <th>
-                            <p class="subtitle">BUILT-IN FEATURES</p>
-                            <p class="title">CHOOSE YOUR PHONE CASE</p>
+                            <p class="subtitle"><?php the_field('types_suptitle'); ?></p>
+                            <p class="title"><?php the_field('types_title'); ?></p>
                         </th>
                         <th>
                             <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPONECASE1.png" alt="#">
@@ -215,22 +200,15 @@ get_header();
             <div class="swiper-js brands-slider">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        <?php
+                        $brands = get_field('brands_list');
+                        foreach ($brands as $brand) : ?>
 
-                        <div class="swiper-slide">
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/BrandApple.png" alt="#">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/BrandHTC.png" alt="#">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/BrandLG.png" alt="#">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/BrandMoto.png" alt="#">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/BrandSansung.png" alt="#">
-                        </div>
+                            <div class="swiper-slide">
+                                <img src="<?= $brand['url'] ?>" alt="<?= $brand['alt'] ?>">
+                            </div>
+
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
@@ -238,8 +216,8 @@ get_header();
     </section>
 
     <section class="reviews">
-        <p class="subtitle">Customer Reviews</p>
-        <h2 class="title">Reviews</h2>
+        <p class="subtitle"><?php the_field('reviews_suptitle'); ?></p>
+        <h2 class="title"><?php the_field('reviews_title'); ?></h2>
         <div class="container">
             <div class="swiper-js reviews-slider">
                 <div class="swiper-buttons">
@@ -250,96 +228,36 @@ get_header();
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
-                            <p class="reviews-title">Perfect Item!</p>
-                            <p class="reviews-desc">
-                                ”The item was perfect. It was easy to use and a perfect fit for my husband use on his belt or pocket.”
-                            </p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        <?php if ( have_rows('reviews_list') ) : ?>
+                        <?php while ( have_rows('reviews_list') ) : the_row();
+                            ?>
+
+                            <div class="swiper-slide">
+                                <p class="reviews-title"><?php the_sub_field('title'); ?></p>
+                                <p class="reviews-desc">
+                                    ”<?php the_sub_field('text'); ?>”
+                                </p>
+                                <div class="rating">
+                                    <?php
+                                    $star_rating = get_sub_field('rating');
+                                    for ( $i = 0; $i < 5; $i++ ) {
+                                        $star = $i < $star_rating
+                                            ? '<i class="fas fa-star"></i>'
+                                            : '<i class="fas fa-star" style="color: #ccd6df;"></i>';
+                                        echo $star;
+                                    };
+                                    ?>
+                                </div>
+                                <div class="wrap">
+                                    <p class="reviews-author"><?php the_sub_field('author'); ?></p>
+                                    <p class="reviews-position">Customer</p>
+                                </div>
+                                <a href="<?= get_sub_field('button')['url'] ?>" class="btn btn-2 orange"><?= get_sub_field('button')['title'] ?></a>
                             </div>
-                            <div class="wrap">
-                                <p class="reviews-author">Gladys </p>
-                                <p class="reviews-position">Customer </p>
-                            </div>
-                            <a href="#" class="btn btn-2 orange">View Product</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <p class="reviews-title">Perfect Item!</p>
-                            <p class="reviews-desc">
-                                ”The item was perfect. It was easy to use and a perfect fit for my husband use on his belt or pocket.”
-                            </p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="wrap">
-                                <p class="reviews-author">Gladys </p>
-                                <p class="reviews-position">Customer </p>
-                            </div>
-                            <a href="#" class="btn btn-2 orange">View Product</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <p class="reviews-title">Perfect Item!</p>
-                            <p class="reviews-desc">
-                                ”The item was perfect. It was easy to use and a perfect fit for my husband use on his belt or pocket.”
-                            </p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="wrap">
-                                <p class="reviews-author">Gladys </p>
-                                <p class="reviews-position">Customer </p>
-                            </div>
-                            <a href="#" class="btn btn-2 orange">View Product</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <p class="reviews-title">Perfect Item!</p>
-                            <p class="reviews-desc">
-                                ”The item was perfect. It was easy to use and a perfect fit for my husband use on his belt or pocket.”
-                            </p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="wrap">
-                                <p class="reviews-author">Gladys </p>
-                                <p class="reviews-position">Customer </p>
-                            </div>
-                            <a href="#" class="btn btn-2 orange">View Product</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <p class="reviews-title">Perfect Item!</p>
-                            <p class="reviews-desc">
-                                ”The item was perfect. It was easy to use and a perfect fit for my husband use on his belt or pocket.”
-                            </p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="wrap">
-                                <p class="reviews-author">Gladys </p>
-                                <p class="reviews-position">Customer </p>
-                            </div>
-                            <a href="#" class="btn btn-2 orange">View Product</a>
-                        </div>
+
+                        <?php endwhile; ?>
+                        <?php endif; ?>
+
                     </div>
                 </div>
             </div>
@@ -349,67 +267,51 @@ get_header();
     <section class="about-block">
         <div class="about-block-img"></div>
         <div class="about-block-content">
-            <h3>ABOUT ROME TECH</h3>
-            <b>Bringing People & Technology Together</b>
-            <p>ShellHolster.com thrives off of your 100% satisfaction. Our phone cases website wouldn’t exist today if our customers weren’t happy with the products and services we provide. Our skilled Customer Happiness reps are available to help with any questions about our products, billing, transactions, or even for a casual hello. We know how it feels to be frustrated with products that don’t fit, don’t look like they were described, or receiving broken items in the mail, which is why we offer a 100% satisfaction guarantee. Message Us for ANY reason and we’ll take care of the issue as fast as we can.</p>
-            <a href="#" class="btn orange">READ MORE</a>
+            <h3><?php the_field('about_title'); ?></h3>
+            <?php the_field('about_text'); ?>
+            <a href="<?= get_field('about_button')['url'] ?>" class="btn orange"><?= get_field('about_button')['title'] ?></a>
         </div>
     </section>
 
     <section class="buy">
         <div class="container">
             <div class="wrap">
-                <p class="subtitle">BUY SHELL HOLSTER CASE</p>
-                <h2 class="title">Experience the New Kind of Phone Usability</h2>
+                <p class="subtitle"><?php the_field('filters_suptitle'); ?></p>
+                <h2 class="title"><?php the_field('filters_title'); ?></h2>
             </div>
-            <div class="buy-options">
+            <form class="buy-options" method="get" action="<?php the_permalink(get_option('woocommerce_shop_page_id' )); ?>">
                 <div class="options-wrap">
-                    <select>
-                        <option data-display="All Brands">All Brands</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Apple2">Apple2</option>
-                        <option value="Apple3" disabled>Apple3</option>
-                        <option value="Apple4">Apple4</option>
+                    <select name="filter_brand">
+                        <option value="">All Brands</option>
+                        <?php the_filter_options( 'brand' ); ?>
                     </select>
-                    <select>
-                        <option data-display="All Series">All Series</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Apple2">Apple2</option>
-                        <option value="Apple3" disabled>Apple3</option>
-                        <option value="Apple4">Apple4</option>
+                    <select name="filter_series">
+                        <option value="">All Series</option>
+                        <?php the_filter_options( 'series' ); ?>
                     </select>
-                    <select>
-                        <option data-display="All Models">All Models</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Apple2">Apple2</option>
-                        <option value="Apple3" disabled>Apple3</option>
-                        <option value="Apple4">Apple4</option>
+                    <select name="filter_model">
+                        <option value="">All Models</option>
+                        <?php the_filter_options( 'model' ); ?>
                     </select>
-                    <select>
-                        <option data-display="All Style">All Style</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Apple2">Apple2</option>
-                        <option value="Apple3" disabled>Apple3</option>
-                        <option value="Apple4">Apple4</option>
+                    <select name="filter_style">
+                        <option value="">All Style</option>
+                        <?php the_filter_options( 'style' ); ?>
                     </select>
-                    <select>
-                        <option data-display="All Colors">All Colors</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Apple2">Apple2</option>
-                        <option value="Apple3" disabled>Apple3</option>
-                        <option value="Apple4">Apple4</option>
+                    <select name="filter_color">
+                        <option value="">All Colors</option>
+                        <?php the_filter_options( 'color' ); ?>
                     </select>
                 </div>
-                <div class="btn orange">SHOP NOW</div>
-            </div>
+                <button type="submit" class="btn orange">SHOP NOW</button>
+            </form>
         </div>
     </section>
 
-    <section class="go-to-store">
+    <section class="go-to-store" style="background-image:url('<?php the_field('to_store_bg'); ?>');">
         <div class="container">
-            <p class="subtitle">For more cases</p>
-            <p class="title">Go to Store</p>
-            <a href="#" class="btn orange">SHOP NOW</a>
+            <p class="subtitle"><?php the_field('to_store_suptitle'); ?></p>
+            <p class="title"><?php the_field('to_store_title'); ?></p>
+            <a href="<?= get_field('to_store_button')['url']; ?>" class="btn orange"><?= get_field('to_store_button')['title']; ?></a>
         </div>
     </section>
 </main>

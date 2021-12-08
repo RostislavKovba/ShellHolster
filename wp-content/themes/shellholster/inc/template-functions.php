@@ -48,38 +48,6 @@ add_filter( 'get_custom_logo', 'change_logo_class' );
 
 
 /**
- * Delete widgets.
- */
-function remove_default_widget() {
-    unregister_widget('WP_Widget_Archives'); // Архивы
-    unregister_widget('WP_Widget_Calendar'); // Календарь
-    unregister_widget('WP_Widget_Categories'); // Рубрики
-    unregister_widget('WP_Widget_Meta'); // Мета
-    unregister_widget('WP_Widget_Pages'); // Страницы
-    unregister_widget('WP_Widget_Recent_Comments'); // Свежие комментарии
-    unregister_widget('WP_Widget_Recent_Posts'); // Свежие записи
-    unregister_widget('WP_Widget_RSS'); // RSS
-    unregister_widget('WP_Widget_Search'); // Поиск
-    unregister_widget('WP_Widget_Tag_Cloud'); // Облако меток
-    unregister_widget('WP_Widget_Text'); // Текст
-    unregister_widget('WP_Widget_Media_Audio');
-    unregister_widget('WP_Widget_Media_Video');
-    unregister_widget('WP_Widget_Media_Gallery');
-    unregister_widget('WP_Widget_Media_Image');
-}
-add_action( 'widgets_init', 'remove_default_widget', 20 );
-
-
-/**
- * Unregister admin menu items
- */
-function remove_menus(){
-    remove_menu_page( 'edit-comments.php' );          // Комментарии
-}
-add_action( 'admin_menu', 'remove_menus' );
-
-
-/**
  * Delete category prefix
  */
 function delete_category_prefix( $prefix ){

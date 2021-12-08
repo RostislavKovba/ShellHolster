@@ -1,0 +1,21 @@
+2021-12-07T13:03:15+00:00 CRITICAL Uncaught Error: Call to undefined function shellholster_woocommerce_cart_link() in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:191
+Stack trace:
+#0 W:\domains\shellHolster\wp-content\themes\shellholster\header.php(45): shellholster_woocommerce_header_cart()
+#1 W:\domains\shellHolster\wp-includes\template.php(770): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#3 W:\domains\shellHolster\wp-includes\general-template.php(48): locate_template()
+#4 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\single-product.php(22): get_header()
+#5 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#7 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#8 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 191
+
+2021-12-07T14:19:15+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 259
+
+2021-12-07T14:20:51+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 259
+
+2021-12-07T14:37:19+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 284
+
+2021-12-07T14:37:24+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 284
+

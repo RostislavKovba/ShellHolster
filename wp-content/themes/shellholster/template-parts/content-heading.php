@@ -15,8 +15,6 @@
             <?php the_field('hero_subtitle'); ?>
         </h2>
 
-        <ul class="breadcrumbs">
-            <?php the_breadcrumb(); ?>
-        </ul>
+        <?php woocommerce_breadcrumb(); ?>
     </div>
 </div>

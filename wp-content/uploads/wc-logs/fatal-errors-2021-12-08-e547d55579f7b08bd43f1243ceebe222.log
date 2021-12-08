@@ -1,0 +1,32 @@
+2021-12-08T11:57:59+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:293
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 293
+
+2021-12-08T11:58:21+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:290
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 290
+
+2021-12-08T11:59:17+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:290
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 290
+
+2021-12-08T12:17:28+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:339
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 339
+
