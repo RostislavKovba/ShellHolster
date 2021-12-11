@@ -265,7 +265,7 @@ get_header();
     </section>
 
     <section class="about-block">
-        <div class="about-block-img"></div>
+        <div class="about-block-img" style="background-image:url('<?= get_template_directory_uri(); ?>/img/all/AboutUs.png');"></div>
         <div class="about-block-content">
             <h3><?php the_field('about_title'); ?></h3>
             <?php the_field('about_text'); ?>
