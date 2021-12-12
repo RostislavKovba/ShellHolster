@@ -159,4 +159,35 @@
     font-weight: 900;
     color: $navy;
   }
+  table{
+    @extend .table;
+  }
+}
+
+.table {
+  width: 100%;
+  overflow: auto;
+  thead tr th {
+    font-size: 16px;
+    font-weight: 600;
+    background: $dark-white-3;
+    padding: 15px;
+    text-align: left;
+  }
+  tr td {
+    background: $dark-white-2;
+    padding: 15px;
+  }
+  tfoot tr th {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    text-align: left;
+  }
+  a{
+    color: $navy;
+    &:hover{
+      color: $yellow;
+    }
+  }
 }

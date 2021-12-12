@@ -1,9 +1,9 @@
-header{
+.header{
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 15;
   &.fixed_header{
     background: rgba(42, 37, 96, 0.70);
     backdrop-filter: blur(20px);

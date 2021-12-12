@@ -17,9 +17,15 @@ form{
       }
     }
   }
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+  }
   label{
     display: block;
     margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
   }
   input, textarea{
     transition: $transition;
@@ -40,6 +46,12 @@ form{
     &[type="checkbox"]{
       width: 20px;
       height: 20px;
+    }
+    &[type="number"] {
+      width: 50px;
+      @include breakpoint(md) {
+        width: 100%;
+      }
     }
   }
   textarea{

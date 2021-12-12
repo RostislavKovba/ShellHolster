@@ -409,6 +409,12 @@ p.no-comments {
 	clear: both;
 	padding: 20px;
 	background: $light-gray-2;
+	a{
+		color: $dark-blue;
+		&:hover{
+			color: $orange;
+		}
+	}
 }
 
 .woocommerce-info,
@@ -546,9 +552,50 @@ a.cart-contents span.count {
 .woocommerce-cart{
 	background: $dark-white-2;
 }
+.select2-container .select2-selection--single {
+	height: 50px;
+	border-radius: 0;
+	border: 1px solid $light-gray;
+}
+
+.woocommerce-privacy-policy-text{
+	a{
+		color: $dark-blue;
+		&:hover{
+			color: $orange;
+		}
+	}
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	line-height: 50px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 50px;
+}
+
+.select2-results__option.select2-results__option--highlighted {
+	background-color: $orange !important;
+}
 .woocommerce{
+	.product-remove{
+		a{
+			font-size: 25px
+		}
+	}
+	table {
+		@extend .table;
+		tr td{
+			@include breakpoint(md) {
+				padding: 5px;
+			}
+		}
+	}
 	em {
 		font-style: italic;
+		color: $light-gray;
+		font-size: 14px;
 	}
 	&.widget_shopping_cart{
 		right: 0;
@@ -562,16 +609,15 @@ a.cart-contents span.count {
 		margin: 30px 0 0;
 	}
 	h2{
-		font-size: 30px;
+		@extend .title, .title-2;
 	}
 	form{
-		&:not(.subscribtion-form, .search-form){
+		&:not(.subscribtion-form, .search-form, .woocommerce-cart-form) {
 			margin-top: 20px;
 			margin-bottom: 20px;
 			background: $white;
 			border: 1px solid $dark-white;
 			max-width: 600px;
-			width: fit-content;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -589,6 +635,11 @@ a.cart-contents span.count {
 				margin-left: 0;
 			}
 		}
+		h3{
+			@extend .title,
+			.title-2;
+			margin-bottom: 20px;
+		}
 	}
 	.lost_password{
 		a{
@@ -605,21 +656,11 @@ a.cart-contents span.count {
 		}
 	}
 }
-.woocommerce-account{
-	form{
-		&:not(.subscribtion-form, .search-form){
-			width: calc(100% / 2 - 20px);
-			@include breakpoint(md) {
-				width: 100%;
-			}
-		}
-	}
-}
 
 .default-page{
 	.woocommerce{
-		padding: 50px;
-		@include breakpoint(md) {
+		padding: 40px 0;
+		@include breakpoint(lg) {
 			padding: 20px 0;
 		}
 	}

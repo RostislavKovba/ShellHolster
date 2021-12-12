@@ -39,6 +39,9 @@
       color: $white;
     }
   }
+  &.gray {
+    background: $light-gray;
+  }
   &.navy{
     background: $dark-gray;
     color: $white;
@@ -60,6 +63,9 @@
       a{
         color: $navy;
       }
+    }
+    &.gray {
+      background: $light-gray-2;
     }
   }
 }

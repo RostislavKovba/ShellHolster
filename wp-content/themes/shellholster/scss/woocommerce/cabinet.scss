@@ -9,9 +9,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include breakpoint(md) {
+      flex-direction: column;
+    }
+    .woocommerce-Button.button {
+      display: block;
+    }
+    .woocommerce-Address-title{
+      &.title{
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+      a{
+        font-size: 16px;
+      }
+    }
     .woocommerce-MyAccount-navigation{
       width: calc(30% - 50px);
-      @include breakpoint(smmd) {
+      @include breakpoint(md) {
         width: 100%;
       }
       ul{
@@ -47,8 +64,9 @@
       border-left: 3px solid $orange;
       background: $white;
       padding: 30px;
-      @include breakpoint(smmd) {
+      @include breakpoint(md) {
         width: 100%;
+        margin: 20px 0;
       }
       p{
         padding: 10px 0;
@@ -65,60 +83,41 @@
         border:none;
         padding: 0;
       }
-    }
-    form{
-      width: 100%;
-      margin: 0 auto;
-      border: none;
-      p{
+      form {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
         padding: 0;
-      }
-      fieldset{
-        flex-direction: column;
+
+        p {
+          padding: 0;
+        }
+
+        fieldset {
+          flex-direction: column;
+        }
       }
     }
     .woocommerce-Addresses{
       display: flex;
       justify-content: space-between;
+      @include breakpoint(sm) {
+        flex-direction: column;
+      }
       .woocommerce-Address {
         width: calc(100% / 2 - 20px);
+        @include breakpoint(sm) {
+          width: 100%;
+          margin: 20px 0;
+        }
       }
     }
   }
-}
+  .login-wrap {
+    width: calc(100% / 2 - 20px);
 
-.site-header-cart{
-  position: relative;
-  &:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  .cart{
-    z-index: 2;
-    position: relative;
-  }
-  .widget_shopping_cart {
-    width: 230px;
-    background: $dark-gray;
-    .widget_shopping_cart_content{
-      background: $dark-gray;
-      *{
-        color: $white;
-      }
-    }
-    img{
-      max-width: 50px;
-    }
-    .woocommerce-mini-cart__buttons{
-      @extend .btn;
-      @extend .btn-2;
-      @extend .orange;
-      margin: 10px auto;
+    @include breakpoint(md) {
+      width: 100%;
     }
   }
 }
