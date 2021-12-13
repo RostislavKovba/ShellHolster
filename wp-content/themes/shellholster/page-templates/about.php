@@ -24,7 +24,7 @@ get_header();
         </div>
     </div>
 
-    <div class="why-us">
+    <div class="why-us" style="background-image:url('<?= get_template_directory_uri(); ?>/img/all/gotoStore.png');">
         <div class="container">
             <div class="why-us-list">
                 <h3 class="title-2">Why Us</h3>

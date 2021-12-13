@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header class="header">
     <div class="container">
 
         <?php the_custom_logo(); ?>

@@ -1,0 +1,99 @@
+.btn{
+  position: relative;
+  transition: $transition;
+  padding: 15px 40px;
+  max-width: 200px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  width: fit-content;
+  text-align: center;
+  z-index: 1;
+  display: block;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  a{
+    font-size: 19px;
+    font-weight: 700;
+    @include breakpoint(sm) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  @include breakpoint(sm) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &-2{
+    font-size: 16px;
+    padding: 10px 20px;
+    a{
+      font-size: 16px;
+    }
+  }
+  &.orange{
+    background: $orange;
+    color: $white;
+    a{
+      color: $white;
+    }
+  }
+  &.gray {
+    background: $light-gray;
+  }
+  &.navy{
+    background: $dark-gray;
+    color: $white;
+    a{
+      color: $white;
+    }
+  }
+  &:hover{
+    &.orange{
+      background: $yellow;
+      color: $navy;
+      a{
+        color: $navy;
+      }
+    }
+    &.navy{
+      background: $white;
+      color: $navy;
+      a{
+        color: $navy;
+      }
+    }
+    &.gray {
+      background: $light-gray-2;
+    }
+  }
+}
+
+.swiper-buttons{
+  .swiper-button-prev, .swiper-button-next{
+    color: $white;
+    font-size: 25px;
+    &:after{
+      display: none;
+    }
+    &:hover{
+      color: $orange;
+    }
+  }
+}
+
+.swiper-pagination{
+  z-index: 2;
+  .swiper-pagination-bullet{
+    background: $white;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background: $orange;
+  }
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
+  }
+}

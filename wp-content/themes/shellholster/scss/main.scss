@@ -1,0 +1,49 @@
+/*!
+Theme Name: shellholster
+Theme URI: https://shellholster.com/
+Author: Shellholster
+Author URI: https://shellholster.com/
+Description: Shellholster theme
+Version: 1.0.0
+Requires PHP: 7.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: shellholster
+*/
+
+//general styles
+@import 'general/reset';
+@import 'general/colors';
+@import 'general/mixin';
+@import 'general/breakpoints';
+@import 'general/global';
+@import 'general/editor';
+
+//libs
+@import 'libs/fancy-box';
+@import 'libs/nice-select';
+@import 'libs/swiper';
+
+//woocommerce
+@import 'woocommerce/woocommerce';
+// @import 'woocommerce/wishlist';
+// @import 'woocommerce/productlist';
+@import 'woocommerce/checkout';
+// @import 'woocommerce/product';
+@import 'woocommerce/cabinet';
+
+//component styles
+@import 'components/titles';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/subscribe-block';
+
+//page styles
+@import 'pages/front-page';
+@import 'pages/contact-us';
+@import 'pages/faq';
+@import 'pages/policy';
+@import 'pages/about-us';
+@import 'pages/page-404';

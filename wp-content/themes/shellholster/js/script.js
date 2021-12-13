@@ -2,7 +2,7 @@ jQuery( function($)
 {
   $(document).ready((function () {
     if ($(".menu").on("click", (function () {
-      $(this).toggleClass("opened"), $("header").toggleClass("opened")
+      $(this).toggleClass("opened"), $(".header").toggleClass("opened")
     })), $(".menu-item-has-children").on("click", (function () {
       $(this).find("ul").toggleClass("active")
     })), $(".search-block .fa-search").on("click", (function () {
@@ -12,7 +12,7 @@ jQuery( function($)
     })), $(".faq-block li").on("click", (function () {
       $(this).toggleClass("opened")
     })), $(window).scroll((function () {
-      var e = $(this), i = $("header");
+      var e = $(this), i = $(".header");
       e.scrollTop() > 120 ? i.addClass("fixed_header") : i.removeClass("fixed_header")
     })), $("#map").length > 0) {
       e = {
