@@ -1,0 +1,258 @@
+2021-12-15T14:34:40+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:34:41+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\single-product.php(51): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:38:08+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:41:35+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:43:18+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:45:36+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:46:37+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:46:39+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\single-product.php(51): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:46:45+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\single-product.php(51): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:48:48+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\single-product.php(51): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:49:07+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\single-product.php(51): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:49:15+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\taxonomy-product-cat.php(22): wc_get_template()
+#6 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#7 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#8 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#9 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:49:50+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\taxonomy-product-cat.php(22): wc_get_template()
+#6 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#7 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#8 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#9 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:50:19+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:50:40+00:00 CRITICAL Uncaught Error: Call to undefined function the_filter_options() in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:286
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 286
+
+2021-12-15T14:50:48+00:00 CRITICAL Uncaught Error: Call to undefined function the_filter_options() in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:286
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 286
+
+2021-12-15T14:50:52+00:00 CRITICAL Uncaught Error: Call to undefined function the_filter_options() in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:286
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 286
+
+2021-12-15T14:50:56+00:00 CRITICAL Uncaught Error: Call to undefined function the_filter_options() in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:286
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 286
+
+2021-12-15T14:52:45+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:53:16+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:53:51+00:00 CRITICAL Uncaught Error: Call to undefined function shell_contact_info() in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php:54
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template.php(770): require_once()
+#1 W:\domains\shellHolster\wp-includes\template.php(716): load_template()
+#2 W:\domains\shellHolster\wp-includes\general-template.php(92): locate_template()
+#3 W:\domains\shellHolster\wp-content\themes\shellholster\woocommerce\archive-product.php(119): get_footer()
+#4 W:\domains\shellHolster\wp-includes\template-loader.php(106): include('W:\\domains\\shel...')
+#5 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#6 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#7 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\footer.php on line 54
+
+2021-12-15T14:53:59+00:00 CRITICAL Uncaught Error: Call to undefined function the_filter_options() in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:286
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 286
+
+2021-12-15T14:54:01+00:00 CRITICAL Uncaught Error: Call to undefined function the_filter_options() in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php:286
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\template-loader.php(106): include()
+#1 W:\domains\shellHolster\wp-blog-header.php(19): require_once('W:\\domains\\shel...')
+#2 W:\domains\shellHolster\index.php(17): require('W:\\domains\\shel...')
+#3 {main}
+  thrown in W:\domains\shellHolster\wp-content\themes\shellholster\page-templates\home.php on line 286
+
+2021-12-15T14:54:39+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in W:\domains\shellHolster\wp-content\themes\shellholster\functions.php on line 182
+

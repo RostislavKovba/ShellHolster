@@ -41,13 +41,11 @@ get_header(); ?>
         </div>
 
         <div class="contact-us-form">
-            <p class="form-title title-2">Have a Question? Contact Us!</p>
+            <p class="form-title title-2"><?php the_field('contact_form_title'); ?></p>
 
-            <p class="form-subtitle subtitle-3">Contact us with any questions, returns, or concerns. Our customer support team is available Monday
-                through Friday 9am to 5pm (EST).
-            </p>
+            <p class="form-subtitle subtitle-3"><?php the_field('contact_form_text'); ?></p>
 
-            <p class="form-subtitle-2 subtitle-3">Leave a <b>Message</b></p>
+            <p class="form-subtitle-2 subtitle-3"><?php the_field('contact_form_subtitle'); ?></p>
 
             <form method="post" class="form">
                 <fieldset>
@@ -58,6 +56,8 @@ get_header(); ?>
                 <textarea placeholder="Comment"></textarea>
                 <button type="submit">Submit</button>
             </form>
+
+            <?= do_shortcode(get_field('contact_form_shortcode')); ?>
         </div>
     </div>
 

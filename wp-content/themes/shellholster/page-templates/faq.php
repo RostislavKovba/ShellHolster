@@ -36,8 +36,9 @@ get_header(); ?>
 
         </ul>
 
-        <p class="btn-subtitle">Still have question?</p>
-        <a href="/contact" class="btn orange">GET IN TOUCH WITH US</a>
+        <p class="btn-subtitle"><?php the_field('under_faqs_title'); ?></p>
+
+        <?php acf_button('under_faqs_btn', 'btn orange'); ?>
     </div>
 
 </main>

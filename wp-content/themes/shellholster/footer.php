@@ -15,10 +15,13 @@
             <p class="subscribtion-title">BE THE FIRST TO KNOW</p>
             <p class="subscribtion-subtitle"><b>Get 10%</b> off your order when you sign up for the latest news and savings!</p>
         </div>
+
         <form class="form subscribtion-form">
             <input type="text" placeholder="Enter your email address">
             <button type="submit" value="Send">Subscribe</button>
         </form>
+
+        <?= do_shortcode(get_field('subscribe_form', 'contact')); ?>
     </div>
 </div>
 

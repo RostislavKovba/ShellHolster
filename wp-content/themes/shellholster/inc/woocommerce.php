@@ -196,22 +196,19 @@ if ( ! function_exists( 'shellholster_woocommerce_header_cart' ) ) {
      *
      * @return void
      */
-    function shellholster_woocommerce_header_cart() {
-        if ( is_cart() ) {
-            $class = 'current-menu-item';
-        } else {
-            $class = '';
-        }
-        ?>
+    function shellholster_woocommerce_header_cart()
+    {
+        $class = is_cart() ? 'current-menu-item' : ''; ?>
+
         <ul id="site-header-cart" class="site-header-cart">
             <li class="<?php echo esc_attr( $class ); ?>">
                 <?php shellholster_woocommerce_cart_link(); ?>
             </li>
             <li>
                 <?php
-                $instance = array(
+                $instance = [
                     'title' => '',
-                );
+                ];
 
                 the_widget( 'WC_Widget_Cart', $instance );
                 ?>
@@ -226,14 +223,14 @@ if ( ! function_exists( 'shellholster_woocommerce_header_cart' ) ) {
  * Breadcrumb
  */
 function custom_breadcrumb_defaults( $args ) {
-    $args = array(
+    $args = [
         'delimiter'   => ' » ',
         'wrap_before' => '<ul class="breadcrumbs">',
         'wrap_after'  => '</ul>',
         'before'      => '',
         'after'       => '',
         'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
-    );
+    ];
 
     return $args;
 }
@@ -265,7 +262,17 @@ function custom_heading() {
     <?php
 }
 
-function custom_category_descrption() {
+function count_and_ordering_wrapper() {
+    echo '<div class="products-actions">';
+}
+function flashs_wrapper() {
+    echo '<div class="product-flashs">';
+}
+function custom_wrapper_end() {
+    echo '</div>';
+}
+
+function custom_category_description() {
     $category  = get_queried_object();
     $id        = $category->term_id;
     echo '<div class="editor">';
@@ -275,17 +282,56 @@ function custom_category_descrption() {
     echo '</div>';
 }
 
+function custom_preorder_flash() {
+    global $product;
+    if ( $product->get_stock_status() == 'onbackorder' ) {
+        echo '<span class="preorder">';
+        echo $product->get_stock_status();
+        echo '</span>';
+     }
+}
+
+function custom_hot_flash() {
+    global $product;
+    if ( get_field('is_hot_flash') ) {
+        echo '<span class="hot">';
+        echo 'HOT';
+        echo '</span>';
+    }
+}
+
+function custom_style_field() {
+    global $product;
+    if ( $product->get_attribute('pa_style') ) {
+        echo '<span class="case-style">';
+        echo $product->get_attribute('pa_style');
+        echo '</span>';
+     }
+}
+
 // Archive product
 add_action( 'woocommerce_archive_description', 'woocommerce_breadcrumb', 20 );
+add_action( 'woocommerce_before_shop_loop', 'count_and_ordering_wrapper', 15 );
+add_action( 'woocommerce_before_shop_loop', 'custom_wrapper_end', 40 );
 add_action( 'woocommerce_before_single_product', 'custom_heading', 5 );
-add_action( 'woocommerce_after_shop_loop', 'custom_category_descrption', 20 );
+add_action( 'woocommerce_after_shop_loop', 'custom_category_description', 20 );
 
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
 remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 
 
+// Content product
+add_action( 'woocommerce_before_shop_loop_item_title', 'flashs_wrapper', 4 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'custom_hot_flash', 5 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'custom_preorder_flash', 5 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 5 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'custom_wrapper_end', 9 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'custom_style_field', 20 );
+
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
 // Single product
+
 
 // Cart
 remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_proceed_to_checkout', 20 );

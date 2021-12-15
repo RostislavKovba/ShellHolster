@@ -191,6 +191,24 @@ if( function_exists('acf_add_options_page') ) {
     ]);
 }
 
+/**
+ * @param string $field
+ * @param string $class
+ */
+function acf_button( $field, $class )
+{
+    if ( !$field ) return;
+
+    $link = get_field($field);
+
+    printf(
+        '<a href="%s" class="%s">%s</a>',
+        $link['url'],
+        $class,
+        $link['title']
+    );
+}
+
 
 /**
  * Contact info
@@ -225,14 +243,14 @@ function shell_contact_info( $field )
 }
 
 /**
- * @param $filter_name
+ * @param string $filter_name
  */
 function the_filter_options( $filter_name )
 {
     if ( !$filter_name ) return;
 
-    $brands = get_terms('pa_'. $filter_name);
-    foreach ($brands as $brand) {
-        echo '<option value="' . $brand->slug . '">' . $brand->name . '</option>';
+    $filter_item = get_terms('pa_'. $filter_name);
+    foreach ($filter_item as $item) {
+        echo '<option value="' . $item->slug . '">' . $item->name . '</option>';
     }
 }
