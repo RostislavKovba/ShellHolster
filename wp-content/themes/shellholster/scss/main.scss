@@ -27,9 +27,9 @@ Text Domain: shellholster
 //woocommerce
 @import 'woocommerce/woocommerce';
 // @import 'woocommerce/wishlist';
-// @import 'woocommerce/productlist';
+@import 'woocommerce/productlist';
 @import 'woocommerce/checkout';
-// @import 'woocommerce/product';
+@import 'woocommerce/product';
 @import 'woocommerce/cabinet';
 
 //component styles

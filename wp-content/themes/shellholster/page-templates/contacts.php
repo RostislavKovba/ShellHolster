@@ -47,16 +47,6 @@ get_header(); ?>
 
             <p class="form-subtitle-2 subtitle-3"><?php the_field('contact_form_subtitle'); ?></p>
 
-            <form method="post" class="form">
-                <fieldset>
-                    <input type="text" placeholder="Name"/>
-                    <input type="text" placeholder="Phone"/>
-                    <input type="email" placeholder="Email"/>
-                </fieldset>
-                <textarea placeholder="Comment"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-
             <?= do_shortcode(get_field('contact_form_shortcode')); ?>
         </div>
     </div>

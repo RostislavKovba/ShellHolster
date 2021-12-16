@@ -120,4 +120,16 @@
       width: 100%;
     }
   }
+
+  .woocommerce-columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
+    .woocommerce-column__title {
+      padding-bottom: 10px;
+    }
+  }
 }

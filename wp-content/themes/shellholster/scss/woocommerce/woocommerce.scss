@@ -608,11 +608,54 @@ a.cart-contents span.count {
 	.return-to-shop{
 		margin: 30px 0 0;
 	}
+	.cart {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: revert;
+		margin: 20px 0;
+	}
+	  .hot,
+	  .onsale {
+	  	position: absolute;
+	  	right: 0;
+	  	top: 0;
+	  	background: $purple;
+	  	color: $white;
+	  	padding: 0 10px;
+	  }
+
+	  .preorder {
+	  	position: absolute;
+	  	left: 0;
+	  	top: 0;
+	  	background: $yellow;
+	  	color: $white;
+	  	padding: 0 10px;
+	  }
+
+	  .onsale {
+	  	background: $red;
+	  }
 	h2{
 		@extend .title, .title-2;
 	}
+	.product{
+		position: relative;
+	}
+	.button.product_type_simple {
+		@extend .btn,
+		.btn-2,
+		.orange;
+		text-transform: uppercase;
+		margin: 10px auto;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
 	form{
-		&:not(.subscribtion-form, .search-form, .woocommerce-cart-form) {
+		&:not(.subscribtion-form, .search-form, .woocommerce-cart-form, .wpcf7-form, #commentform, .cart, .sidebar-filter form, .woocommerce-ordering) {
 			margin-top: 20px;
 			margin-bottom: 20px;
 			background: $white;
