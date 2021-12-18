@@ -60,11 +60,11 @@
   align-items: center;
   color: $white;
   @include breakpoint(md) {
-    min-height: 300px;
+    min-height: 400px;
   }
   &:after{
     content: '';
-    background-image: url(../img/all/footer_img.jpg);
+    background-image: url(../../img/all/footer_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -97,7 +97,9 @@
   flex-wrap: wrap;
   text-align: left;
   @include breakpoint(sm) {
-    margin: 0 auto 25px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
   }
   a{
     color: $white;

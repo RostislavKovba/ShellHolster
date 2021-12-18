@@ -493,12 +493,12 @@ a.cart-contents span.count {
 	margin-bottom: 1.5em;
 }
 
-.widget_price_filter .price_slider_amount {
+.widget_price_filter {
 	text-align: right;
 	line-height: 2.4;
 }
 
-.widget_price_filter .price_slider_amount .button {
+.widget_price_filter .button {
 	float: left;
 }
 
@@ -655,7 +655,7 @@ a.cart-contents span.count {
 		}
 	}
 	form{
-		&:not(.subscribtion-form, .search-form, .woocommerce-cart-form, .wpcf7-form, #commentform, .cart, .sidebar-filter form, .woocommerce-ordering) {
+		&:not(.subscribtion-form, .search-form, .woocommerce-cart-form, .wpcf7-form, #commentform, .cart, .sidebar-filter form, .woocommerce-ordering, .woocommerce-checkout) {
 			margin-top: 20px;
 			margin-bottom: 20px;
 			background: $white;

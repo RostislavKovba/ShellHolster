@@ -22,32 +22,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 
 	<section class="related products">
+		<div class="container">
+			<?php
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Similar Products', 'woocommerce' ) );
 
-		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Similar Products', 'woocommerce' ) );
+			if ( $heading ) :
+				?>
+				<p class="subtitle">Check out of these</p>
+				<h2><?php echo esc_html( $heading ); ?></h2>
+			<?php endif; ?>
+			
 
-		if ( $heading ) :
-			?>
-            <p class="subtitle">Check out of these</p>
-			<h2><?php echo esc_html( $heading ); ?></h2>
-		<?php endif; ?>
-		
-		<?php woocommerce_product_loop_start(); ?>
+			<div class="swiper-js related-products-slider">
+				<div class="swiper-buttons">
+					<div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+					<div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+				</div>
+				<div class="swiper-pagination"></div>
 
-			<?php foreach ( $related_products as $related_product ) : ?>
+				<?php woocommerce_product_loop_start(); ?>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<?php foreach ( $related_products as $related_product ) : ?>
+								<div class="swiper-slide">
+									<?php
+									$post_object = get_post( $related_product->get_id() );
 
-					<?php
-					$post_object = get_post( $related_product->get_id() );
+									setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-
-					wc_get_template_part( 'content', 'product' );
-					?>
-
-			<?php endforeach; ?>
-
-		<?php woocommerce_product_loop_end(); ?>
-
+									wc_get_template_part( 'content', 'product' );
+									?>
+								</div>
+							<?php endforeach; ?>
+						</div>
+					</div>
+				<?php woocommerce_product_loop_end(); ?>
+			</div>
+		</div>
 	</section>
 	<?php
 endif;

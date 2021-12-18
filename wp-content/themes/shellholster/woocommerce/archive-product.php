@@ -49,7 +49,7 @@ do_action( 'woocommerce_before_main_content' );
 
 <div class="container">
     <div class="wrapper-left-sidebar">
-
+        <div class="mobile-sidebar-btn"></div>
         <?php
         /**
          * Hook: woocommerce_sidebar.

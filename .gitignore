@@ -3,3 +3,4 @@ html/
 # JetBrains IDE
 .idea
 wp-content/themes/shellholster/prepros.config
+wp-content/themes/shellholster/node_modules

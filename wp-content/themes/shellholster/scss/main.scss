@@ -1,18 +1,5 @@
-/*!
-Theme Name: shellholster
-Theme URI: https://shellholster.com/
-Author: Shellholster
-Author URI: https://shellholster.com/
-Description: Shellholster theme
-Version: 1.0.0
-Requires PHP: 7.2
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: shellholster
-*/
-
 //general styles
-@import 'general/reset';
+@import 'general/reset'; 
 @import 'general/colors';
 @import 'general/mixin';
 @import 'general/breakpoints';
@@ -26,7 +13,6 @@ Text Domain: shellholster
 
 //woocommerce
 @import 'woocommerce/woocommerce';
-// @import 'woocommerce/wishlist';
 @import 'woocommerce/productlist';
 @import 'woocommerce/checkout';
 @import 'woocommerce/product';
