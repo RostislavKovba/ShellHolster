@@ -578,6 +578,11 @@ a.cart-contents span.count {
 .select2-results__option.select2-results__option--highlighted {
 	background-color: $orange !important;
 }
+.shipping_method{
+	li{
+		display: flex;
+	}
+}
 .woocommerce{
 	.product-remove{
 		a{
