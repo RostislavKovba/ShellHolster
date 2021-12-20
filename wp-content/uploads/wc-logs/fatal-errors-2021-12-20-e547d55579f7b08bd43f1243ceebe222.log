@@ -1,0 +1,138 @@
+2021-12-20T11:38:29+00:00 CRITICAL syntax error, unexpected '$term_html' (T_VARIABLE) in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 253
+
+2021-12-20T11:39:20+00:00 CRITICAL syntax error, unexpected '$term_html' (T_VARIABLE) in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 253
+
+2021-12-20T11:40:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:40:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:42:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:42:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 3 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:43:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 3 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:44:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 3 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:58:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 3 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T11:59:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T12:00:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T12:01:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T12:01:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 1 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T12:02:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_color_filter(), 2 passed in W:\domains\shellHolster\wp-includes\class-wp-hook.php on line 305 and exactly 4 expected in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:251
+Stack trace:
+#0 W:\domains\shellHolster\wp-includes\class-wp-hook.php(305): custom_color_filter()
+#1 W:\domains\shellHolster\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(461): apply_filters()
+#3 W:\domains\shellHolster\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-layered-nav.php(187): WC_Widget_Layered_Nav->layered_nav_list()
+#4 W:\domains\shellHolster\wp-includes\class-wp-widget.php(393): WC_Widget_Layered_Nav->widget()
+#5 W:\domains\shellHolster\wp-includes\widgets.php(831): WP_Widget->display_callback()
+#6 W:\domains\shellHolster\wp-content\themes\shellholster\sidebar.php(16): dynamic_sidebar()
+#7 W:\domains\shell in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 251
+
+2021-12-20T12:28:37+00:00 CRITICAL Cannot redeclare woo_dequeue_select2() (previously declared in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php:357) in W:\domains\shellHolster\wp-content\themes\shellholster\inc\woocommerce.php on line 370
+

@@ -58,6 +58,15 @@ function shellholster_woocommerce_scripts() {
 		}';
 
 	wp_add_inline_style( 'shellholster-woocommerce-style', $inline_font );
+
+    // Remove Woocommerce Select2
+    if ( class_exists( 'woocommerce' ) ) {
+        wp_dequeue_style( 'select2' );
+        wp_deregister_style( 'select2' );
+
+        wp_dequeue_script( 'selectWoo');
+        wp_deregister_script('selectWoo');
+    }
 }
 add_action( 'wp_enqueue_scripts', 'shellholster_woocommerce_scripts' );
 
@@ -218,7 +227,6 @@ if ( ! function_exists( 'shellholster_woocommerce_header_cart' ) ) {
     }
 }
 
-
 /**
  * Breadcrumb
  */
@@ -246,6 +254,19 @@ function custom_sale_flash($text) {
     return '<span class="onsale">-'.$percentage.'%</span>';
 }
 add_filter('woocommerce_sale_flash', 'custom_sale_flash');
+
+
+function custom_color_filter( $term_html, $term, $link, $count ) {
+    if ( $term->taxonomy == 'pa_color' && $count > 0 ) {
+        $color = get_field('color', 'term_'. $term->term_id);
+        $term_html = sprintf('<a rel="nofollow" href="%s" style="background-color: %s" class="filter-item-color"></a>',
+            esc_url( $link ),
+            esc_html( $color )
+        );
+    }
+    return $term_html;
+}
+add_filter( 'woocommerce_layered_nav_term_html', 'custom_color_filter', 0, 4 );
 
 
 function custom_heading() {
@@ -335,4 +356,3 @@ remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_prod
 
 // Cart
 remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_proceed_to_checkout', 20 );
-

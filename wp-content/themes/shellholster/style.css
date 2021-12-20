@@ -1,12 +1,28 @@
 /*!
-Theme Name: shellholster
-Theme URI: https://shellholster.com/
-Author: Shellholster
-Author URI: https://shellholster.com/
-Description: Shellholster theme
+Theme Name: ShellHolster
+Author: RomeTech
+Author URI: https://rometechservices.com/
+Description:
 Version: 1.0.0
 Requires PHP: 7.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: shellholster
 */
+
+/* color filter */
+ul.woocommerce-widget-layered-nav-list li {
+    padding: 1px;
+    margin: 0 2px;
+    border: 1px solid #000;
+}
+
+ul.woocommerce-widget-layered-nav-list {
+    display: flex;
+}
+
+ul.woocommerce-widget-layered-nav-list a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
