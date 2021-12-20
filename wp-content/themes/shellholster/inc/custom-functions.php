@@ -139,7 +139,7 @@ function the_messenger_link( $messenger = '' )
 
     printf(
         '<a href="%s">
-	        <img src="%s" alt="%s">
+	        <img loading="lazy" src="%s" alt="%s">
 	    </a>',
         $link,
         $icon,
