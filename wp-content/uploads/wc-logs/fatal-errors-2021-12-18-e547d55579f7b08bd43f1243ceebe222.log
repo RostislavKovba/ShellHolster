@@ -1,0 +1,2 @@
+2021-12-18T16:13:04+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\Frontend\OpenServer\domains\ShellHolster\wp-content\themes\shellholster\woocommerce\single-product\related.php on line 59
+

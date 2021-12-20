@@ -5,10 +5,13 @@ form{
   flex-direction: column;
   fieldset {
     display: flex;
+    justify-content: space-between;
     @include breakpoint(sm) {
       flex-direction: column;
     }
     > *{
+      margin-right: 10px;
+      width: 100%;
       &:last-child{
         margin-right: 0;
       }
@@ -16,6 +19,7 @@ form{
         margin-bottom: 10px;
       }
     }
+
   }
   legend {
     font-size: 20px;
@@ -53,6 +57,10 @@ form{
         width: 100%;
       }
     }
+    &[type="submit"] {
+      padding: 0;
+      margin-right: 0;
+    }
   }
   textarea{
     height: 100px;
@@ -62,7 +70,8 @@ form{
       margin-top: 0;
     }
   }
-  button{
+  button,
+  .wpcf7-submit {
     outline: none;
     border: none;
     @include justify;
@@ -87,9 +96,6 @@ form{
       background: $black;
     }
   }
-  &.subscribtion-form{
-    flex-direction: row;
-  }
   &.search-form{
     input{
       background: $lighter-gray;
@@ -105,6 +111,42 @@ form{
       @include breakpoint(sm) {
         right: 25px;
       }
+    }
+  }
+}
+
+.subscribtion-form {
+  flex-direction: row;
+  width: 70%;
+  @include breakpoint(md) {
+     width: 100%;
+  }
+  form{
+    flex-direction: row;
+     @include breakpoint(md) {
+       flex-wrap: wrap;
+     }
+    .subscribe-email {
+      width: 100%;
+    }
+    .wpcf7-spinner {
+      display: none;
+    }
+    .wpcf7-submit{
+      @include breakpoint(md) {
+        margin-top: 10px;
+      }
+    }
+    .wpcf7-response-output {
+      position: absolute;
+      top: 21px;
+      right: -8px;
+      color: $white;
+       @include breakpoint(md) {
+        position: relative;
+        top: 0;
+        right: 0;
+       }
     }
   }
 }
