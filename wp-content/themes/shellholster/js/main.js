@@ -77,6 +77,7 @@ jQuery( function($){
                             speed: 1500,
                             slidesPerView: 1,
                             spaceBetween: 20,
+                            autoHeight: true,
                             loop: true,
                             effect: 'fade',
                             fadeEffect: {
