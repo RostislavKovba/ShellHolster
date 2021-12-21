@@ -299,3 +299,31 @@
     }
   }
 }
+
+.woocommerce-checkout-payment{
+  .payment_methods{
+    padding: 10px 17px;
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      .payment_box{
+        width: 100%;
+        padding: 0 0 10px;
+        margin-left: 35px;
+      }
+      label{
+        padding: 0;
+      }
+    }
+  }
+}
+
+.woocommerce-shipping-methods{
+  li {
+    display: flex;
+  }
+  input{
+    width: 15px !important;
+    height: 15px !important; 
+  }
+}

@@ -113,11 +113,21 @@
       }
     }
   }
-  .login-wrap {
-    width: calc(100% / 2 - 20px);
-
-    @include breakpoint(md) {
+  #customer_login {
+     display: flex;
       width: 100%;
+      justify-content: space-between;
+      @include breakpoint(md) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    >*{
+       width: calc(50% - 20px);
+
+       @include breakpoint(md) {
+         width: 100%;
+         margin: 10px auto;
+       }
     }
   }
 
