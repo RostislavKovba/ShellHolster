@@ -317,3 +317,13 @@
     }
   }
 }
+
+.woocommerce-shipping-methods{
+  li {
+    display: flex;
+  }
+  input{
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
