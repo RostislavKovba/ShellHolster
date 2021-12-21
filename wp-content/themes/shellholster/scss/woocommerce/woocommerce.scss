@@ -246,15 +246,18 @@ table.shop_table_responsive tr td.download-actions .button {
 	position: relative;
 	height: 1.618em;
 	line-height: 1.618;
-	width: 5.3em;
-	font-family: star;
-	font-weight: 400;
+	width: 6.3em;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
 }
 
+.star-rating:before,
+.star-rating span:before {
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	content: "\f005\f005\f005\f005\f005";
+}
 .star-rating::before {
-	content: "\f005" !important;
-	font-family: "Font Awesome 5 Pro" !important;
-	font-weight: 900 !important;
 	opacity: 0.25;
 	float: left;
 	top: 0;
@@ -271,22 +274,11 @@ table.shop_table_responsive tr td.download-actions .button {
 	padding-top: 1.5em;
 } 
 
-.comment-form-rating{
-	.stars a:before {
-		content: "\f005" !important;
-		font-family: "Font Awesome 5 Pro" !important;
-		font-weight: 900 !important;
-	}
-}
-
 .star-rating span::before {
- 	content: "\f005" !important;
- 	font-family: "Font Awesome 5 Pro" !important;
- 	font-weight: 900 !important;
 	top: 0;
 	position: absolute;
 	left: 0;
-	color: #4169e1;
+	color: $orange;
 }
 
 p.stars a {
@@ -308,40 +300,41 @@ p.stars a::before {
 	width: 1em;
 	height: 1em;
 	line-height: 1;
-	font-family: star;
-	content: "\53";
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	content: "\f005";
 	color: #404040;
 	text-indent: 0;
 	opacity: 0.25;
 }
 
 p.stars a:hover ~ a::before {
-	content: "\53";
+	content: "\f005";
 	color: #404040;
 	opacity: 0.25;
 }
 
 p.stars:hover a::before {
-	content: "\53";
-	color: #4169e1;
+	content: "\f005";
+	color: $orange;
 	opacity: 1;
 }
 
 p.stars.selected a.active::before {
-	content: "\53";
-	color: #4169e1;
+	content: "\f005";
+	color: $orange;
 	opacity: 1;
 }
 
 p.stars.selected a.active ~ a::before {
-	content: "\53";
+	content: "\f005";
 	color: #404040;
 	opacity: 0.25;
 }
 
 p.stars.selected a:not(.active)::before {
-	content: "\53";
-	color: #4169e1;
+	content: "\f005";
+	color: $orange;
 	opacity: 1;
 }
 
