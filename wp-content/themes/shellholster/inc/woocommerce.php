@@ -100,8 +100,8 @@ add_filter( 'body_class', 'shellholster_woocommerce_active_body_class' );
  */
 function shellholster_woocommerce_related_products_args( $args ) {
 	$defaults = array(
-		'posts_per_page' => 3,
-		'columns'        => 3,
+		'columns' => 3,
+		'rows'    => 4,
 	);
 
 	$args = wp_parse_args( $defaults, $args );
