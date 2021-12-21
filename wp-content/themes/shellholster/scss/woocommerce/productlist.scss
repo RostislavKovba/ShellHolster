@@ -1,12 +1,13 @@
 .woocommerce-shop,
+.woocommerce-page,
 .term-pre-order {
   .wrapper-left-sidebar{
     padding: 50px 0;
     width: 100%;
     justify-content: space-between;
-    position: relative;
-  }
-  .mobile-sidebar-btn{
+    position: relative; 
+  } 
+  .mobile-sidebar-btn{ 
     transition: $transition;
     display: none;
     background: $orange;
