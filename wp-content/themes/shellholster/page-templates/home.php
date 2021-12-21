@@ -27,7 +27,7 @@ get_header();
                         ?>
 
                         <div class="swiper-slide">
-                            <img src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>">
+                            <img src="<?= $img['url'] ?>" loading="lazy" alt="<?= $img['alt'] ?>">
                             <?php if( $link ) : ?>
                                 <a href="<?= $link['url'] ?>" class="btn orange"><?= $link['title'] ?></a>
                             <?php endif; ?>
@@ -66,7 +66,7 @@ get_header();
                         <p class="title-3"><?php the_sub_field('title'); ?></p>
                         <p class="description"><?php the_sub_field('text'); ?></p>
                         <a href="<?= $link['url'] ?>" class="btn btn-2 orange"><?= $link['title'] ?></a>
-                        <img src="<?= $img['url'] ?>" alt="<?= $img['alt'] ?>" />
+                        <img src="<?= $img['url'] ?>" loading="lazy" alt="<?= $img['alt'] ?>" />
                     </li>
 
                 <?php endwhile; ?>
@@ -79,7 +79,7 @@ get_header();
         <div class="container">
             <p class="subtitle"><?php the_field('design_suptitle'); ?></p>
             <h2 class="title"><?php the_field('design_title'); ?></h2>
-            <img src="<?= get_field('design_img')['url']; ?>" alt="<?= get_field('design_img')['alt']; ?>" />
+            <img src="<?= get_field('design_img')['url']; ?>" loading="lazy" alt="<?= get_field('design_img')['alt']; ?>" />
         </div>
     </section>
 
@@ -87,7 +87,7 @@ get_header();
         <div class="container">
             <p class="subtitle"<?php the_field('portability_suptitle'); ?></p>
             <h2 class="title"><?php the_field('portability_title'); ?></h2>
-            <img src="<?= get_field('portability_img')['url'] ?>" alt="<?= get_field('portability_img')['alt'] ?>" />
+            <img src="<?= get_field('portability_img')['url'] ?>" loading="lazy" alt="<?= get_field('portability_img')['alt'] ?>" />
         </div>
     </section>
 
@@ -102,7 +102,7 @@ get_header();
                     ?>
 
                     <li>
-                        <img src="<?= $img['url']; ?>" alt="<?= $img['alt'] ?>"/>
+                        <img src="<?= $img['url']; ?>" loading="lazy" alt="<?= $img['alt'] ?>"/>
                         <b><?php the_sub_field('title'); ?></b>
                     </li>
 
@@ -115,12 +115,12 @@ get_header();
     <section class="cases-video">
         <div class="container">
             <a href="<?php the_field('features_video'); ?>?wmode=opaque" data-fancybox>
-                <img src="<?= get_field('features_preview')['url']; ?>" alt="<?= get_field('features_preview')['alt']; ?>" />
+                <img src="<?= get_field('features_preview')['url']; ?>" loading="lazy" alt="<?= get_field('features_preview')['alt']; ?>" />
             </a>
         </div>
         <div class="wrapper">
             <div class="container">
-                <img src="<?= get_template_directory_uri(); ?>/img/all/SlimandFunctional.png" alt="#">
+                <img src="<?= get_template_directory_uri(); ?>/img/all/SlimandFunctional.webp" alt="#" loading="lazy">
                 <div class="wrap">
                     <p class="title-3"><span>Slim and</span> Functional</p>
                     <p class="title-3"><span>Ultra</span> Lightweight</p>
@@ -139,13 +139,13 @@ get_header();
                             <p class="title"><?php the_field('types_title'); ?></p>
                         </th>
                         <th>
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPONECASE1.png" alt="#">
+                            <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPONECASE1.webp" loading="lazy" alt="#">
                         </th>
                         <th>
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPNECASE2.png" alt="#">
+                            <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPNECASE2.webp" loading="lazy" alt="#">
                         </th>
                         <th>
-                            <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPNECASE3.png" alt="#">
+                            <img src="<?= get_template_directory_uri(); ?>/img/all/CHOOSEYOURPNECASE3.webp" loading="lazy" alt="#">
                         </th>
                     </tr>
                     <tr class="heading">
@@ -205,7 +205,7 @@ get_header();
                         foreach ($brands as $brand) : ?>
 
                             <div class="swiper-slide">
-                                <img src="<?= $brand['url'] ?>" alt="<?= $brand['alt'] ?>">
+                                <img src="<?= $brand['url'] ?>" loading="lazy" alt="<?= $brand['alt'] ?>">
                             </div>
 
                         <?php endforeach; ?>
@@ -265,7 +265,7 @@ get_header();
     </section>
 
     <section class="about-block">
-        <div class="about-block-img" style="background-image:url('<?= get_template_directory_uri(); ?>/img/all/AboutUs.png');"></div>
+        <div class="about-block-img" style="background-image:url('<?= get_template_directory_uri(); ?>/img/all/AboutUs.webp');"></div>
         <div class="about-block-content">
             <h3><?php the_field('about_title'); ?></h3>
             <?php the_field('about_text'); ?>

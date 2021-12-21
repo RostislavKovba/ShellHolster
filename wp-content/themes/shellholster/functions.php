@@ -144,11 +144,9 @@ add_action( 'widgets_init', 'shellholster_widgets_init' );
 function shellholster_scripts() {
 	wp_enqueue_style( 'shellholster-main-style', get_stylesheet_uri(), array(), null );
 	wp_enqueue_style( 'shellholster-font', 'https://fonts.googleapis.com/css?family=Roboto:400,700', array(), null );
-	wp_enqueue_style( 'fontawesome', 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css', array(), null );
 	wp_enqueue_style( 'shellholster-style', get_template_directory_uri() . '/build/css/main.css', array(), null );
 
 	wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBHv7iI3_z0gzKy83nXBgO0Dn9zDVGQs6A', array(), null, true );
 	wp_enqueue_script( 'shellholster-script', get_template_directory_uri() . '/build/js/main.js', array('jquery'), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -42,25 +42,27 @@ jQuery( function($){
 
         // map
         if ($('#map').length > 0) {
-            function initMap() {
-                var lat = $('#map').attr('data-lat');
-                var lng = $('#map').attr('data-lng');
-                var myLatLng =  {lat: +lat, lng: +lng};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 14,
-                    center: myLatLng,
-                    scrollwheel: false,
-                    navigationControl: false,
-                    mapTypeControl: false,
-                });
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    title: 'ShellHolster'
-                });
-                marker.setAnimation(google.maps.Animation.BOUNCE);
-            }
-            initMap();
+             $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBHv7iI3_z0gzKy83nXBgO0Dn9zDVGQs6A", function(){
+                function initMap() {
+                    var lat = $('#map').attr('data-lat');
+                    var lng = $('#map').attr('data-lng');
+                    var myLatLng =  {lat: +lat, lng: +lng};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 14,
+                        center: myLatLng,
+                        scrollwheel: false,
+                        navigationControl: false,
+                        mapTypeControl: false,
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'ShellHolster'
+                    });
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+                initMap();
+            });
         }
 
         // sliders
