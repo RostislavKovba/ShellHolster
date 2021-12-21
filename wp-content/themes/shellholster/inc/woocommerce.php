@@ -43,8 +43,7 @@ add_action( 'after_setup_theme', 'shellholster_woocommerce_setup' );
  * @return void
  */
 function shellholster_woocommerce_scripts() {
-	wp_enqueue_style( 'shellholster-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION );
-
+	
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
 			font-family: "star";
@@ -60,13 +59,13 @@ function shellholster_woocommerce_scripts() {
 	wp_add_inline_style( 'shellholster-woocommerce-style', $inline_font );
 
     // Remove Woocommerce Select2
-    if ( class_exists( 'woocommerce' ) ) {
-        wp_dequeue_style( 'select2' );
-        wp_deregister_style( 'select2' );
-
-        wp_dequeue_script( 'selectWoo');
-        wp_deregister_script('selectWoo');
-    }
+//    if ( class_exists( 'woocommerce' ) ) {
+//        wp_dequeue_style( 'select2' );
+//        wp_deregister_style( 'select2' );
+//
+//        wp_dequeue_script( 'selectWoo');
+//        wp_deregister_script('selectWoo');
+//    }
 }
 add_action( 'wp_enqueue_scripts', 'shellholster_woocommerce_scripts' );
 
