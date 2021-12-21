@@ -303,3 +303,20 @@
     color: $orange;
   }
 }
+#woocommerce_layered_nav-4{
+  .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term {
+    border-radius: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .woocommerce-widget-layered-nav-list a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100% !important;
+  }
+
+  .woocommerce-widget-layered-nav-list li {
+    border: 1px solid #d0cee6 !important;
+  }
+}

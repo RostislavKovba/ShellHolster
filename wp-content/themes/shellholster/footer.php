@@ -43,7 +43,7 @@
     <div class="container">
         <div class="wrap">
             <a href="/" class="logo-footer">
-                <img src="<?= get_template_directory_uri(); ?>/img/all/footerLogo.png" alt="#"/>
+                <img src="<?= get_template_directory_uri(); ?>/img/all/footerLogo.png" loading="lazy" alt="#"/>
             </a>
 
             <div class="column-wrap mobile-block">

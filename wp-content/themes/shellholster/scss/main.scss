@@ -1,15 +1,16 @@
+//libs
+@import 'libs/fontawesome';
+@import 'libs/fancy-box';
+@import 'libs/nice-select';
+@import 'libs/swiper';
+
 //general styles
-@import 'general/reset'; 
+@import 'general/reset';
 @import 'general/colors';
 @import 'general/mixin';
 @import 'general/breakpoints';
 @import 'general/global';
 @import 'general/editor';
-
-//libs
-@import 'libs/fancy-box';
-@import 'libs/nice-select';
-@import 'libs/swiper';
 
 //woocommerce
 @import 'woocommerce/woocommerce';

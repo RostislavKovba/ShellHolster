@@ -51,6 +51,10 @@ form{
       width: 20px;
       height: 20px;
     }
+    &[type="radio"] {
+      width: 15px;
+      height: 15px;
+    }
     &[type="number"] {
       width: 50px;
       @include breakpoint(md) {
