@@ -40,13 +40,18 @@
         padding-left: 10px;
       }
       @include breakpoint(sm) {
-        top: 75px;
+        top:50px;
       }
       >li{
         position: relative;
         transition: $transition;
         @media(max-width: 1024px){
           width: calc(100% - 10px);
+        }
+        &.pre_order{
+          a{
+            color: $red !important;
+          }
         }
         &:not(:last-child){
           @media(max-width: 1024px){

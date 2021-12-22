@@ -199,8 +199,8 @@
     }
   }
   .products-list{
-     display: flex;
-     justify-content: space-between;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
      padding: 0 0 40px;
     @media(max-width:1150px) {
       display: grid;
@@ -320,4 +320,7 @@
   .woocommerce-widget-layered-nav-list li {
     border: 1px solid #d0cee6 !important;
   }
+}
+.select2-container{
+  z-index: 100002;
 }

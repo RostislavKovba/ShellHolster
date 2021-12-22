@@ -18,6 +18,73 @@ get_header();
             <?php acf_button('content_button', 'btn orange'); ?>
         </div>
     </div>
+    <div class="team">
+        <div class="container">
+            <h3 class="title-2">Meet the Team</h3>
+            <div class="team_list">
+
+                <!-- repeater -->
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <!--  -->
+
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+                <div class="team_item">
+                    <img src="<?= get_template_directory_uri(); ?>/img/all/team_1.png" alt="#" title="#">
+                    <p class="team_name">Roman S</p>
+                    <p class="team_desc">Founder & CEO</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="why-us" style="background-image:url('<?php the_field('whу_us_bg'); ?>');">
         <div class="container">
