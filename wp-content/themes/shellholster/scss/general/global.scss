@@ -70,6 +70,10 @@ html, body {
   font-weight: 400;
   overflow-x: hidden;
   line-height: 1.5;
+  &.hidden{
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 a{
   text-decoration: none;
