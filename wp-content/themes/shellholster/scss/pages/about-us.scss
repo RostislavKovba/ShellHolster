@@ -40,6 +40,52 @@
     }
 }
 
+.team{
+    padding-bottom: 50px;
+    .title-2{
+        text-align: center;
+    }
+    &_list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 0;
+    }
+    &_item{
+        width: calc(100% / 5 - 40px);
+        margin: 20px;
+        @include breakpoint(xl) {
+            width: calc(100% / 4 - 40px);
+        }
+        @include breakpoint(lg) {
+            width: calc(100% / 3 - 40px);
+        }
+        @include breakpoint(md) {
+            width: calc(100% / 2 - 40px);
+        }
+        @include breakpoint(sm) {
+            width: calc(100% / 1 - 40px);
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    p{
+        text-align: center;
+    }
+    &_name {
+        margin: 10px 0 0;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &_desc {
+        font-size: 14px;
+    }
+}
+
 .latest-products{
     background: $orange;
     padding: 100px 0;

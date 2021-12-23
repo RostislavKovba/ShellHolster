@@ -168,6 +168,7 @@
       }
     }
     .products-list{
+      display: flex !important;
       padding: 40px 0;
       overflow: hidden;
       .star-rating{

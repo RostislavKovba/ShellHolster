@@ -27,6 +27,7 @@ jQuery( function($){
         $('.mobile-sidebar-btn').on('click', function(){
             $(this).toggleClass('opened');
             $(this).next().toggleClass('opened');
+            $("body").toggleClass("hidden");   
         });
 
         // header scrolling

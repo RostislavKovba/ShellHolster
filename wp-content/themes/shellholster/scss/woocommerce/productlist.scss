@@ -12,8 +12,8 @@
     display: none;
     background: $orange;
     position: fixed;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     left: 0;
     top: 50%;
     z-index: 100001;
@@ -30,8 +30,8 @@
       position: relative;
       color: $white;
       font-size: 35px;
-      left: 20px;
-      top: 15px;
+      left: 16px;
+      top: 10px;
     }
     &.opened{
       transform: translateX(300px);
@@ -70,12 +70,13 @@
     background: $white;
     position: relative;
     @media(max-width:900px) {
-      z-index: 10001;
+      z-index: 100001;
       position: fixed;
       top: 0;
       left: 0;
       padding: 20px;
-      height: 100vh;
+      margin-top: 75px;
+      height: calc(100vh - 75px);
       overflow-y: auto;
       transform: translateX(-300px);
       @media(max-width:450px) {
@@ -199,8 +200,8 @@
     }
   }
   .products-list{
-     display: flex;
-     justify-content: space-between;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
      padding: 0 0 40px;
     @media(max-width:1150px) {
       display: grid;
@@ -320,4 +321,7 @@
   .woocommerce-widget-layered-nav-list li {
     border: 1px solid #d0cee6 !important;
   }
+}
+.select2-container{
+  z-index: 100002;
 }

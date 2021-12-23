@@ -1,4 +1,14 @@
 .woocommerce-cart{
+  .shipping-calculator-form{
+    .nice-select {
+      width: 100%;
+      border-radius: 0;
+      margin: 0 0 20px;
+      border: 1px solid #cfcfcf;
+      height: 50px;
+      line-height: 50px;
+    }
+  }
   .woocommerce-shipping-methods {
     input {
       margin-right: 10px;
@@ -333,5 +343,17 @@
     width: 15px !important;
     height: 15px !important; 
     margin-top: 5px;
+  }
+}
+
+.nice-select{
+  .list{
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+.create-account{
+  > label{
+    display: flex;
   }
 }
